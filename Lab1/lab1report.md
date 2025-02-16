@@ -120,7 +120,7 @@ String: abc, Derivation: S→aB B→bC C→c
 String: abbaabbaab, Derivation: S→aB B→bB B→bC C→aS S→aB B→bB B→bC C→aS S→aB B→bC C→c
 String: abbbbc, Derivation: S→aB B→bB B→bB B→bB B→bC C→c
 String: abbbbbaaba, Derivation: S→aB B→bC C→bB B→bB B→bB B→bC C→aS S→aB B→bC C→aS S→aB
-
+ 
 Testing strings:
 String abc is correct 
 String abbc is correct 
