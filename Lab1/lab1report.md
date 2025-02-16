@@ -112,7 +112,7 @@ class FiniteAutomaton:
         
 ```        
 ## Results
-* Here is an example of an output. The program generates strings based on the given rules and it displays the derivations. The finite automaton check also works : "abc" string is correct, because it ends in "c". "abb" is wrong, because it doesn't end with c, which means that it isn't a finite automaton.
+* Here is an example of an output. The program generates strings based on the given rules and it displays the derivations. The finite automaton check also works : "abc" string is correct, because it ends in "c". "abb" is wrong, because it doesn't end with c, which means that it isn't a finite automaton, and "ac" is wrong simply because it doesn't follow the grammar rules.
 ```
 The generated strings:
 String: abbaabc, Derivation: S→aB B→bB B→bC C→aS S→aB B→bC C→c
