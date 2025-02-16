@@ -111,6 +111,23 @@ class FiniteAutomaton:
         return bool(current_states & self.accept_states)
         
 ```        
+## Results
+* Here is an example of an output. The program generates strings based on the given rules and it displays the derivations. The finite automaton check also works : "abc" string is correct, because it ends in "c". "abb" is wrong, because it doesn't end with c, which means that it isn't a finite automaton.
+```
+The generated strings:
+String: abbaabc, Derivation: S→aB B→bB B→bC C→aS S→aB B→bC C→c
+String: abc, Derivation: S→aB B→bC C→c
+String: abbaabbaab, Derivation: S→aB B→bB B→bC C→aS S→aB B→bB B→bC C→aS S→aB B→bC C→c
+String: abbbbc, Derivation: S→aB B→bB B→bB B→bB B→bC C→c
+String: abbbbbaaba, Derivation: S→aB B→bC C→bB B→bB B→bB B→bC C→aS S→aB B→bC C→aS S→aB
+ 
+Testing strings:
+String abc is correct 
+String abbc is correct 
+String abbbc is correct 
+String ac is wrong 
+String abb is wrong 
+```
 ## Conclusion
 
 The code succesfully implements the generation of grammar based on a given set of rules, and it also implements the conversion of grammar into a finite automaton.

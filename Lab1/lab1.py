@@ -85,6 +85,6 @@ if __name__ == "__main__":
         "abb"
     ]
 
-    print("\nTesting gives strings:")
+    print("\nTesting strings:")
     for s in test_strings:
         print(f"String {s} is {'correct' if fa.accepts(s) else 'wrong'} ")
